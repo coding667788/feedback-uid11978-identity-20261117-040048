@@ -1,0 +1,18 @@
+{
+  "audience": "rp-local",
+  "clock_skew_seconds": 0,
+  "issuers": {
+    "https://idp-alpha.local": {
+      "key": "b64:YWxwaGEtbG9jYWwtc2lnbmluZy1rZXktMDE",
+      "subjects": ["alice", "bob", "carol"]
+    },
+    "https://idp-beta.local": {
+      "key": "b64:YmV0YS1sb2NhbC1zaWduaW5nLWtleS0wMg",
+      "subjects": ["alice", "dave"]
+    }
+  },
+  "logout_issuers": {
+    "idp-alpha-logout": "b64:YWxwaGEtbG9jYWwtbG9nb3V0LWtleS0wMQ",
+    "idp-beta-logout": "b64:YmV0YS1sb2NhbC1sb2dvdXQta2V5LTAy"
+  }
+}
